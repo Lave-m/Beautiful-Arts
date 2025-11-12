@@ -555,6 +555,92 @@
       </div>
     </section>
 
+    <!-- contact us section -->
+    <section id="contact us" class="py-5">
+      <div class="container border-top">
+        <div class="row g-4">
+          <!--contact info -->
+          <div class="col-md-5">
+            <div class="contact-card d-flex align-items-start p-4 mb-4">
+              <div class="icon-box bg-primary-subtle text-primary me-3">
+                <i class="bi bi-telephone-fill fs-3"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold">Phone Number</h5>
+                <p class="mb-1">+254 744-0000</p>
+                <small class="text-muted">Mon–Fri 9am–6pm EAT</small>
+              </div>
+            </div>
+
+            <div class="contact-card d-flex align-items-start p-4">
+              <div class="icon-box bg-success-subtle text-success me-3">
+                <i class="bi bi-envelope-fill fs-3"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold">Email</h5>
+                <p class="mb-1">contact@company.com</p>
+                <small class="text-muted">We'll respond within 24 hours</small>
+              </div>
+            </div>
+          </div>
+
+          <!--contact form -->
+          <div class="col-md-7">
+            <div class="contact-form p-4">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label fw-semibold">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your full name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-semibold"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label fw-semibold"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    placeholder="+254 744-0000"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label fw-semibold"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Tell us what's on your mind..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 py-2">
+                  <i class="bi bi-send me-2"></i>Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <script>
       const carousel = document.querySelector("#gallery-carousel");
       const thumbnails = document.querySelectorAll(".gallery-thumb");
