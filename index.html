@@ -60,8 +60,11 @@
       }
 
       .gallery-thumb.active {
-        border: 3px solid #D8BD8A;
+        border: 3px solid #d8bd8a;
         transform: scale(1.05);
+      }
+      .card-body .btn {
+        margin-top: auto;
       }
     </style>
   </head>
@@ -474,6 +477,84 @@
         </div>
       </div>
     </section>
+
+    <!-- sponsorship section -->
+    <section id="sponsorship" class="min-vh-100 mt-5">
+      <div class="container text-center">
+        <h2 class="fw-bold fs-1 text-primary mb-4">Become a Sponsor</h2>
+        <p class="text-muted mb-5">
+          Support our mission to preserve and showcase timeless artistry through
+          one of our exclusive sponsorship tiers.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+          <!-- diamond -->
+          <div class="col-md-3">
+            <div class="card border-0 shadow-lg h-100">
+              <div class="card-body d-flex flex-column">
+                <h4 class="fw-bold text-primary mb-3">Diamond</h4>
+                <p class="text-muted">
+                  Exclusive gallery naming rights and
+                   exhibition previews.
+                </p>
+                <h3 class="text-primary my-3">$5,000+</h3>
+                <a href="#" class="btn btn-primary mt-auto">Join as Diamond</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- platinum -->
+          <div class="col-md-3">
+            <div class="card border-0 shadow h-100">
+              <div class="card-body d-flex flex-column">
+                <h4 class="fw-bold text-secondary mb-3">Platinum</h4>
+                <p class="text-muted">
+                  Prominent recognition on our website and exhibition banners.
+                </p>
+                <h3 class="text-primary my-3">$2,500+</h3>
+                <a href="#" class="btn btn-outline-secondary mt-auto"
+                  >Join as Platinum</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- gold -->
+          <div class="col-md-3">
+            <div class="card border-0 shadow h-100">
+              <div class="card-body d-flex flex-column">
+                <h4 class="fw-bold text-warning mb-3">Gold</h4>
+                <p class="text-muted">
+                  Recognition in our annual art showcase and featured
+                  contributor listing.
+                </p>
+                <h3 class="text-primary my-3">$1,000+</h3>
+                <a href="#" class="btn btn-outline-warning mt-auto"
+                  >Join as Gold</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- silver -->
+          <div class="col-md-3">
+            <div class="card border-0 shadow h-100">
+              <div class="card-body d-flex flex-column                                                 ">
+                <h4 class="fw-bold text-dark mb-3">Silver</h4>
+                <p class="text-muted">
+                  Acknowledgement on our website and newsletter issues.
+                </p>
+                <h3 class="text-primary my-3">$500+</h3>
+                <a href="#" class="btn btn-outline-dark mt-auto"
+                  >Join as Silver</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script>
       const carousel = document.querySelector("#gallery-carousel");
       const thumbnails = document.querySelectorAll(".gallery-thumb");
