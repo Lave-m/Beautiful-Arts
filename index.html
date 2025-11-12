@@ -43,6 +43,26 @@
         object-fit: cover;
         border-radius: 0.5rem;
       }
+
+      #gallery-carousel .carousel-item {
+        height: 500px;
+      }
+
+      #gallery-carousel img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      #gallery-carousel .row,
+      #gallery-carousel .col-md-6 {
+        height: 100%;
+      }
+
+      .gallery-thumb.active {
+        border: 3px solid #D8BD8A;
+        transform: scale(1.05);
+      }
     </style>
   </head>
 
@@ -153,7 +173,6 @@
 
     <section id="about-us" class="py-5 mt-5">
       <div class="container">
-        <!-- about row -->
         <div class="row align-items-center mb-5">
           <!-- image -->
           <div class="col-md-6 mb-4 mb-md-0">
@@ -271,5 +290,198 @@
         </div>
       </div>
     </section>
+
+    <!-- gallery section -->
+
+    <section id="gallery" class="py-5 bg-dark text-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold fs-1 text-warning">Gallery</h2>
+          <p class="text-secondary">
+            Explore the art that bridges medieval mastery and modern
+            imagination.
+          </p>
+        </div>
+
+        <!-- gallery carousel -->
+        <div
+          id="gallery-carousel"
+          class="carousel slide mb-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner rounded shadow-lg overflow-hidden">
+            <!-- art1 -->
+            <div class="carousel-item active">
+              <div class="row align-items-center">
+                <div class="col-md-6 p-0">
+                  <img
+                    src="assets\images\gallery9.jpg"
+                    class="object-fit-cover"
+                    alt="Artwork 1"
+                  />
+                </div>
+                <div class="col-md-6 p-5 bg-dark">
+                  <h3 class="fw-bold text-warning">Medieval Revival</h3>
+                  <h5 class="text-light fw-light">By Angie Moraa</h5>
+                  <p class="lead fw-lighter text-light">
+                    A stunning depiction of renaissance craftsmanship revived
+                    through modern interpretation. Subtle light and texture
+                    interplay bring forgotten beauty into new form.
+                  </p>
+                  <button class="btn btn-outline-warning mt-3">
+                    Sponsor Art
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- art2 -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6 p-0">
+                  <img
+                    src="assets\images\gallery10.jpg"
+                    class="object-fit-cover"
+                    alt="Artwork 2"
+                  />
+                </div>
+                <div class="col-md-6 p-5 bg-dark">
+                  <h3 class="fw-bold text-warning">Modern Minimalism</h3>
+                  <h5 class="text-primary fw-light">By Lee Potter</h5>
+                  <p class="lead fw-lighter text-light">
+                    Geometric precision meets organic flow in this abstract
+                    composition, inviting deep reflection on the boundaries
+                    between order and chaos.
+                  </p>
+                  <button class="btn btn-outline-warning mt-3">
+                    Sponsor Art
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- art3 -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6 p-0">
+                  <img
+                    src="assets\images\gallery1.jpg"
+                    class="object-fit-cover"
+                    alt="Artwork 3"
+                  />
+                </div>
+                <div class="col-md-6 p-5 bg-dark">
+                  <h3 class="fw-bold text-warning">Ethereal Legacy</h3>
+                  <h5 class="text-primary fw-light">By Kamau Jones</h5>
+                  <p class="lead fw-lighter text-light">
+                    A dance of shadow and gold that captures the fleeting
+                    essence of medieval divinity.
+                  </p>
+                  <button class="btn btn-outline-warning mt-3">
+                    Sponsor Art
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- art4 -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6 p-0">
+                  <img
+                    src="assets\images\gallery 7.jpg"
+                    class="object-fit-cover"
+                    alt="Artwork 3"
+                  />
+                </div>
+                <div class="col-md-6 p-5 bg-dark">
+                  <h3 class="fw-bold text-warning">Fades of Time</h3>
+                  <h5 class="text-primary fw-light">By Clara Patra</h5>
+                  <p class="lead fw-lighter text-light">
+                    A faded modern gaze meets the enduring clarity of the past.
+                    This piece explores the permeable boundary between our
+                    transient present and history's lasting voice.
+                  </p>
+                  <button class="btn btn-outline-warning mt-3">
+                    Sponsor Art
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- carousel controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <!-- thumb nails -->
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <img
+              src="assets/images/gallery9.jpg"
+              class="img-fluid rounded shadow-sm gallery-thumb active"
+              alt="Thumbnail 1"
+              data-bs-target="#gallery-carousel"
+              data-bs-slide-to="0"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src="assets/images/gallery10.jpg"
+              class="img-fluid rounded shadow-sm gallery-thumb"
+              alt="Thumbnail 2"
+              data-bs-target="#gallery-carousel"
+              data-bs-slide-to="1"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src="assets/images/gallery1.jpg"
+              class="img-fluid rounded shadow-sm gallery-thumb"
+              alt="Thumbnail 3"
+              data-bs-target="#gallery-carousel"
+              data-bs-slide-to="2"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src="assets/images/gallery 7.jpg"
+              class="img-fluid rounded shadow-sm gallery-thumb"
+              alt="Thumbnail 4"
+              data-bs-target="#gallery-carousel"
+              data-bs-slide-to="3"
+              style="cursor: pointer"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const carousel = document.querySelector("#gallery-carousel");
+      const thumbnails = document.querySelectorAll(".gallery-thumb");
+
+      carousel.addEventListener("slide.bs.carousel", (e) => {
+        thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+        thumbnails[e.to].classList.add("active");
+      });
+    </script>
   </body>
 </html>
